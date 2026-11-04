@@ -1,4 +1,5 @@
 # Travel Log Nuxt
+
 Log your travel experiences with this Nuxt 3 application. This project is built using Nuxt 3, TypeScript, and Tailwind CSS.
 
 ## Setup
@@ -34,4 +35,5 @@ Locally preview production build:
 # pnpm
 pnpm preview
 ```
+
 Enjoy😉✨
