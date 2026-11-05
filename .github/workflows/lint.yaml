@@ -18,7 +18,14 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
 
-      - name: Use Node.js
+      - name: Setup Node.js (local act)
+        if: env.ACT
+        uses: actions/setup-node@v7
+        with:
+          node-version: 26
+
+      - name: Setup Node.js (GitHub Actions)
+        if: ${{ !env.ACT }}
         uses: actions/setup-node@v7
         with:
           node-version: 26
