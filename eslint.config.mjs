@@ -3,6 +3,8 @@ import antfu from "@antfu/eslint-config";
 
 import withNuxt from "./.nuxt/eslint.config.mjs";
 
+// TODO: add tailwindcss plugin to eslint config
+
 export default withNuxt(
   antfu({
     type: "app",
