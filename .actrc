@@ -1,7 +1,0 @@
---cache-server-addr
-0.0.0.0
---cache-server-port
-8090
---cache-server-external-url
-http://host.docker.internal:8090
---pull=false

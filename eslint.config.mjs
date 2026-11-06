@@ -1,9 +1,8 @@
 // @ts-check
 import antfu from "@antfu/eslint-config";
+import tailwindcss from "eslint-plugin-tailwindcss";
 
 import withNuxt from "./.nuxt/eslint.config.mjs";
-
-// TODO: add tailwindcss plugin to eslint config
 
 export default withNuxt(
   antfu({
@@ -40,4 +39,12 @@ export default withNuxt(
       ],
     },
   }),
+  {
+    settings: {
+      tailwindcss: {
+        cssConfigPath: "./app/assets/css/main.css",
+      },
+    },
+  },
+  tailwindcss.configs["flat/recommended"],
 );
