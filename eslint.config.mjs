@@ -46,5 +46,6 @@ export default withNuxt(
       },
     },
   },
-  tailwindcss.configs["flat/recommended"],
+  // @ts-expect-error -- Tailwind plugin config types are incompatible with ESLint 10 types
+  tailwindcss.configs.recommended,
 );
