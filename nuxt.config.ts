@@ -1,5 +1,7 @@
 import tailwindcss from "@tailwindcss/vite";
 
+import "./lib/env";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ["@nuxt/eslint", "@nuxt/icon/module", "@nuxtjs/color-mode"],
@@ -18,5 +20,13 @@ export default defineNuxtConfig({
   },
   colorMode: {
     dataValue: "theme",
+  },
+  typescript: {
+    nodeTsConfig: {
+      include: ["../lib/**/*.ts"],
+      compilerOptions: {
+        types: ["node"],
+      },
+    },
   },
 });
