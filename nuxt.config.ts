@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@pinia/nuxt",
   ],
+  debug: true,
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
