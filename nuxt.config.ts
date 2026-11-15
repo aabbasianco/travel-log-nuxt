@@ -10,6 +10,9 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@pinia/nuxt",
   ],
+  experimental: {
+    typedPages: true,
+  },
   debug: true,
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
